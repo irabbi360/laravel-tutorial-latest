@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Laravel Image Upload') }}</div>
+                <div class="card-header">{{ __('Laravel Resize Image Before Upload') }}</div>
 
                 <div class="card-body">
 
@@ -18,7 +18,7 @@
                     @endif
 
 
-                    <form action="{{ route('imageUpload')}}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('imageUploadResize')}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class=row>
                             <div class="col-md-6">

@@ -13,6 +13,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('/image-upload-resize', [App\Http\Controllers\ImageUploadController::class, 'imageUploadResize'])
+->name('imageUploadResize');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::get('/', function () {
     return view('welcome');
 });
