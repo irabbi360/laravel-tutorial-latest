@@ -13,33 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/image-upload-resize', [App\Http\Controllers\ImageUploadController::class, 'imageUploadResize'])
-->name('imageUploadResize');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -48,4 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::post('/image-upload', [App\Http\Controllers\ImageUploadController::class, 'imageUpload'])->name('imageUpload');
+Route::post('/multi-uploads', [App\Http\Controllers\MultiFileUploadController::class, 'filesUpload'])->name('filesUpload');
+
