@@ -24,6 +24,24 @@ Route::post('/image-upload-resize', [App\Http\Controllers\ImageUploadController:
 
 
 
+Route::get('helper', function () {
+   $img = '1617895681.png';
+   $fullPath = imgPath($img);
+
+   dd($fullPath);
+});
+
+Route::get('helper2', function () {
+    $newDate = changeDateFormat(date('Y-m-d'), 'm/d/Y');
+
+    dd($newDate);
+});
+
+
+
+
+
+
 
 
 
