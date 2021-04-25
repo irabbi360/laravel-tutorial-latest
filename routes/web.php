@@ -30,6 +30,31 @@ Route::post('/image-upload-resize', [App\Http\Controllers\ImageUploadController:
 
 
 
+Route::get('pdf-download', [\App\Http\Controllers\PdfController::class,'pdfGenerator']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
