@@ -1,37 +1,30 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Xpress</title></title>
+    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
+</head>
+
+<body>
+
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Laravel Resize Image Before Upload') }}</div>
+    <div class="box">
+        <div class="title">
+            <span class="block"></span>
+            <h1>Coding Xpress</h1>
+        </div>
 
-                <div class="card-body">
-
-                    @if($message = Session::get('success'))
-                    <div class="alert alert-success alert-block">
-                        <button type="button" class="close" data-dismiss="alert">×</button>
-                            <strong>{{ $message }}</strong>
-                    </div>
-                    <img src="images/{{ Session::get('image') }}">
-                    @endif
-
-
-                    <form action="{{ route('imageUploadResize')}}" method="post" enctype="multipart/form-data">
-                        @csrf
-                        <div class=row>
-                            <div class="col-md-6">
-                                <input type="file" class="form-control" name="image">
-                            </div>
-                            <div class="col-md-6">
-                                <button type="submit" class="btn btn-success">Upload</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <div class="role">
+            <div class="block"></div>
+            <p>Laravel, Vue.js, Javascript, HTML, CSS, Jquey, PHP, Node.js etc</p>
         </div>
     </div>
 </div>
-@endsection
+
+</body>
+
+</html>
