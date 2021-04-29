@@ -40,6 +40,28 @@ Route::post('/image-upload-resize', [App\Http\Controllers\ImageUploadController:
 
 
 
+Route::get('demo-mail',[App\Http\Controllers\DemoMailController::class,'demoMail']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::get('/', function () {
     return view('welcome');
 });
