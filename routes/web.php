@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('ajaxImageUpload');
 });
+
+
+Route::post('ajax-image-upload',[App\Http\COntrollers\AjaxImageController::class,'ajaxImageUpload'])
+    ->name('ajaxImageUpload');
+
+
+
+
+
+
+
+
+
 
 Auth::routes();
 
